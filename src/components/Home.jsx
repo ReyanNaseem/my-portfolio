@@ -7,7 +7,7 @@ const Home = () => {
       <div className='flex items-center justify-between w-[100%] h-[100%]'>
       <div className='w-[40%]'>
         <div className='h-[80vh] w-[30vw] bg-black rounded-3xl shadow-blue-700'>
-          <img className='object-cover h-[100%]' src="./src/assets/my-pic.png" alt="" />
+          <img className='object-cover h-[100%]' src="src/assets/my-pic.png" alt="" />
         </div>
       </div>
       <div className='w-[60%] flex flex-col gap-4'>
