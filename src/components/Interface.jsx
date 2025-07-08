@@ -7,7 +7,7 @@ const Interface = ({children}) => {
   return (
     <div className='flex items-center justify-center relative bg-[#1c1c1c] overflow-x-hidden w-full min-h-[100vh] px-[6vw]'>
 
-        <div className='fixed flex flex-col items-end gap-4 top-[50%] -translate-y-[50%] right-[2%] text-white w-[180px]'>
+        <div className='fixed flex flex-col items-end gap-4 z-50 top-[50%] -translate-y-[50%] right-[2%] text-white w-[180px]'>
 
           <div className='flex justify-end' onClick={()=>{navigate("/")}}>
             <p className='group flex items-center justify-end w-[60px] h-[60px]  rounded-full bg-blue-700 cursor-pointer transition-all duration-700 hover:w-[180px] relative'>
