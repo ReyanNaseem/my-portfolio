@@ -1,5 +1,14 @@
-import React from 'react'
-import Interface from './Interface'
+import Interface from './Interface';
+import Html from '../../public/html.png';
+import Css from '../../public/css.png';
+import Js from '../../public/js.png';
+import Boostrap from '../../public/boostrap.png';
+import Tailwind from '../../public/tailwind.png';
+import Github from '../../public/github.jpg';
+import Nodejs from '../../public/nodejs.webp';
+import React from '../../public/react.png';
+import Express from '../../public/express.png';
+import Mongodb from '../../public/mongodb.png';
 
 const About = () => {
   return (
@@ -42,7 +51,18 @@ const About = () => {
 
           <div>
             <h1 className="text-white text-3xl font-bold mb-8">MY SKILLS:</h1>
-            <div className="border h-16"></div>
+            <div className="flex flex-wrap items-center gap-4">
+              <img src={Html} className='h-[80px] rounded-md' alt="" />
+              <img src={Css} className='h-[80px] rounded-md' alt="" />
+              <img src={Js} className='h-[80px] rounded-md' alt="" />
+              <img src={Boostrap} className='h-[80px] rounded-md' alt="" />
+              <img src={Tailwind} className='h-[80px] rounded-md' alt="" />
+              <img src={Github} className='h-[80px] rounded-md' alt="" />
+              <img src={React} className='h-[80px] rounded-md' alt="" />
+              <img src={Nodejs} className='h-[80px] rounded-md' alt="" />
+              <img src={Express} className='h-[80px] rounded-md' alt="" />
+              <img src={Mongodb} className='h-[80px] rounded-md' alt="" />
+            </div>
           </div>
 
           <div>

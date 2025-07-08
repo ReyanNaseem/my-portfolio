@@ -1,9 +1,9 @@
-import React from 'react'
-import Page1 from './Home'
 import { useNavigate } from 'react-router-dom'
 
 const Interface = ({children}) => {
-    const navigate = useNavigate();
+
+  const navigate = useNavigate();
+
   return (
     <div className='flex items-center justify-center relative bg-[#1c1c1c] overflow-x-hidden w-full min-h-[100vh] px-[6vw]'>
 
