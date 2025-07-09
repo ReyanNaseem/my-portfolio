@@ -6,6 +6,7 @@ import Project3 from '../../public/project3.PNG';
 import Project4 from '../../public/project4.PNG';
 import Project5 from '../../public/project5.PNG';
 import Project6 from '../../public/project6.PNG';
+import Project7 from '../../public/project7.PNG';
 import { Link } from 'react-router-dom';
 
 const Project = () => {
@@ -18,56 +19,63 @@ const Project = () => {
       src: Project1,
       text: 'Duo Studio Web Clone',
       tech: 'Html, Css, Javascript, Gsap',
-      link: ''
+      link: 'https://reyannaseem.github.io/Duo-studio/'
     },
     {
       id: 2,
       src: Project2,
       text: 'Tic Tac Toe',
       tech: 'Html, Css, Javascript',
-      link: ''
+      link: 'https://reyannaseem.github.io/tic-tac-toe/'
     },
     {
       id: 3,
       src: Project3,
-      text: 'Duo Studio Web Clone',
+      text: 'Toyota Indus Web Clone',
       tech: 'Html, Css, Javascript',
-      link: ''
+      link: 'https://reyannaseem.github.io/toyota-indus/'
     },
     {
       id: 4,
       src: Project4,
       text: 'Nurpur Web Clone',
       tech: 'Html, Css, Javascript',
-      link: ''
+      link: 'https://reyannaseem.github.io/nurpur-clone/'
     },
     {
       id: 5,
       src: Project5,
       text: 'Envanto Web Clone',
       tech: 'Html, Css, Javascript',
-      link: ''
+      link: 'https://reyannaseem.github.io/envato-clone/'
     },
     {
       id: 6,
       src: Project6,
       text: 'Coffee Web Clone',
       tech: 'Html, Css, Javascript',
-      link: ''
+      link: 'https://reyannaseem.github.io/boostrap/'
     },
+    {
+      id: 7,
+      src: Project7,
+      text: 'TODO App',
+      tech: 'Html, Css, Js',
+      link: 'https://reyannaseem.github.io/To-Do-List/'
+    }
   ])
 
   return (
     <Interface>
       <div className="w-[100%] min-h-[100vh] py-16">
+
         <h1 className="text-white text-6xl font-bold text-center mb-12">
           MY <span className="text-blue-700">PROJECTS</span>
         </h1>
 
         <div className="w-[90%] grid grid-cols-3 gap-8 text-white mx-auto">
 
-          {/* project overview */}
-
+          {/* project overview div*/}
           <div className={`${open? 'flex': 'hidden'} items-center justify-center w-[100vw] top-0 left-0 fixed h-[100vh] bg-white bg-opacity-10 z-50`}>
             <div className='relative flex flex-col gap-4 rounded-lg w-[600px] bg-[#1c1c1c] p-8'>
               <i onClick={()=>setOpen(false)} className="ri-close-large-line absolute right-4 top-4 cursor-pointer"></i>
@@ -119,7 +127,7 @@ const Project = () => {
                     />
 
                     <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-green-300 bg-opacity-70 duration-300 text-blue-700 font-bold text-xl">
-                      {projectData.text}
+                      {item.text}
                     </div>
                   </div>
                 
@@ -127,8 +135,8 @@ const Project = () => {
             })
           }
 
-          
         </div>
+        
       </div>
     </Interface>
   );

@@ -9,8 +9,46 @@ import Nodejs from '../../public/nodejs.webp';
 import React from '../../public/react.png';
 import Express from '../../public/express.png';
 import Mongodb from '../../public/mongodb.png';
+import { useState } from 'react';
 
 const About = () => {
+
+  const [skill, setSkill] = useState([
+    { src: Html },
+    { src: Css },
+    { src: Js },
+    { src: Boostrap },
+    { src: Tailwind },
+    { src: Github },
+    { src: React },
+    { src: Nodejs },
+    { src: Express },
+    { src: Mongodb },
+  ])
+
+  const [education, setEducation] = useState([
+    {
+      duration: "2024-2025",
+      degree: "Web & Mobile App Development – SMIT Paposh Branch",
+      desc: "Completed a comprehensive course in web and mobile app development.",
+    },
+    {
+      duration: "2023-2025",
+      degree: "ADP in Web Developement - Virtual University of Pakistan",
+      desc: "Pursuing a comprehensive degree in web development.",
+    },
+    {
+      duration: "2020-2022",
+      degree: "Intermediate - Jinnah College Nazimabad",
+      desc: "Completed a comprehensive degree in science (Pre-Engineering).",
+    },
+    {
+      duration: "2018-2020",
+      degree: "Matriculation - Tameer-e-Millat Model School",
+      desc: "Completed a comprehensive course in science.",
+    },
+  ]);
+
   return (
     <Interface>
       <div className="w-[100%] min-h-[100vh] py-16">
@@ -52,16 +90,14 @@ const About = () => {
           <div>
             <h1 className="text-white text-3xl font-bold mb-8">MY SKILLS:</h1>
             <div className="flex flex-wrap items-center gap-4">
-              <img src={Html} className='h-[80px] rounded-md' alt="" />
-              <img src={Css} className='h-[80px] rounded-md' alt="" />
-              <img src={Js} className='h-[80px] rounded-md' alt="" />
-              <img src={Boostrap} className='h-[80px] rounded-md' alt="" />
-              <img src={Tailwind} className='h-[80px] rounded-md' alt="" />
-              <img src={Github} className='h-[80px] rounded-md' alt="" />
-              <img src={React} className='h-[80px] rounded-md' alt="" />
-              <img src={Nodejs} className='h-[80px] rounded-md' alt="" />
-              <img src={Express} className='h-[80px] rounded-md' alt="" />
-              <img src={Mongodb} className='h-[80px] rounded-md' alt="" />
+              {
+                skill.map((item, index)=>{
+                  return(
+                    <img key={index} src={item.src} className='h-[80px] rounded-md' alt="" />
+                  )
+                })
+              }
+              
             </div>
           </div>
 
@@ -69,86 +105,33 @@ const About = () => {
             <h1 className="text-white text-3xl font-bold mb-8">EDUCATION:</h1>
             <div className="flex items-center justify-center">
               <div className="w-[90%] grid grid-cols-2 gap-x-4 gap-y-8">
-                <div className="flex gap-4">
-                  <div className="flex flex-col items-center">
-                    <div className="w-[40px] h-[40px] flex items-center justify-center rounded-full bg-blue-700">
-                      <i class="ri-graduation-cap-line text-2xl text-white"></i>
-                    </div>
-                    <div className="w-[1px] h-[100%] border"></div>
-                  </div>
-                  <div>
-                    <p className="bg-gray-800 px-3 py-1 rounded-full w-fit text-white">
-                      2024-2025
-                    </p>
-                    <h1 className="text-white font-bold text-lg">
-                      Web & Mobile App Development – SMIT Paposh Branch <br />
-                      <span className="font-normal">
-                        Completed a comprehensive course in web and mobile app
-                        development.
-                      </span>
-                    </h1>
-                  </div>
-                </div>
-                <div className="flex gap-4">
-                  <div className="flex flex-col items-center">
-                    <div className="w-[40px] h-[40px] flex items-center justify-center rounded-full bg-blue-700">
-                      <i class="ri-graduation-cap-line text-2xl text-white"></i>
-                    </div>
-                    <div className="w-[1px] h-[100%] border"></div>
-                  </div>
-                  <div>
-                    <p className="bg-gray-800 px-3 py-1 rounded-full w-fit text-white">
-                      2024-2025
-                    </p>
-                    <h1 className="text-white font-bold text-lg">
-                      Web & Mobile App Development – SMIT Paposh Branch <br />
-                      <span className="font-normal">
-                        Completed a comprehensive course in web and mobile app
-                        development.
-                      </span>
-                    </h1>
-                  </div>
-                </div>
-                <div className="flex gap-4">
-                  <div className="flex flex-col items-center">
-                    <div className="w-[40px] h-[40px] flex items-center justify-center rounded-full bg-blue-700">
-                      <i class="ri-graduation-cap-line text-2xl text-white"></i>
-                    </div>
-                    <div className="w-[1px] h-[100%] border"></div>
-                  </div>
-                  <div>
-                    <p className="bg-gray-800 px-3 py-1 rounded-full w-fit text-white">
-                      2024-2025
-                    </p>
-                    <h1 className="text-white font-bold text-lg">
-                      Web & Mobile App Development – SMIT Paposh Branch <br />
-                      <span className="font-normal">
-                        Completed a comprehensive course in web and mobile app
-                        development.
-                      </span>
-                    </h1>
-                  </div>
-                </div>
-                <div className="flex gap-4">
-                  <div className="flex flex-col items-center">
-                    <div className="w-[40px] h-[40px] flex items-center justify-center rounded-full bg-blue-700">
-                      <i class="ri-graduation-cap-line text-2xl text-white"></i>
-                    </div>
-                    <div className="w-[1px] h-[100%] border"></div>
-                  </div>
-                  <div>
-                    <p className="bg-gray-800 px-3 py-1 rounded-full w-fit text-white">
-                      2024-2025
-                    </p>
-                    <h1 className="text-white font-bold text-lg">
-                      Web & Mobile App Development – SMIT Paposh Branch <br />
-                      <span className="font-normal">
-                        Completed a comprehensive course in web and mobile app
-                        development.
-                      </span>
-                    </h1>
-                  </div>
-                </div>
+                {
+                  education.map((item, index)=>{
+                    return (
+                      <div key={index} className="flex gap-4">
+                        <div className="flex flex-col items-center">
+                          <div className="w-[40px] h-[40px] flex items-center justify-center rounded-full bg-blue-700">
+                            <i class="ri-graduation-cap-line text-2xl text-white"></i>
+                          </div>
+                          <div className="w-[1px] h-[100%] border"></div>
+                        </div>
+                        <div>
+                          <p className="bg-gray-800 px-3 py-1 rounded-full w-fit text-white">
+                            {item.duration}
+                          </p>
+                          <h1 className="text-white font-bold text-lg">
+                            {item.degree}
+                            <br />
+                            <span className="font-normal">
+                              {item.desc}
+                            </span>
+                          </h1>
+                        </div>
+                      </div>
+                    );
+                  })
+                }
+                
               </div>
             </div>
           </div>
