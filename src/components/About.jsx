@@ -106,7 +106,7 @@ const About = () => {
           <div>
             <h1 className="text-white text-3xl font-bold mb-8">EDUCATION:</h1>
             <div className="flex items-center justify-center">
-              <div className="w-[90%] grid grid-cols-2 gap-x-4 gap-y-8">
+              <div className="w-[90%] grid md:grid-cols-2 gap-x-4 gap-y-8">
                 {
                   education.map((item, index)=>{
                     return (

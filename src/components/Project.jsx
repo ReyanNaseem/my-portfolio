@@ -73,11 +73,11 @@ const Project = () => {
           MY <span className="text-blue-700">PROJECTS</span>
         </h1>
 
-        <div className="w-[90%] grid grid-cols-3 gap-8 text-white mx-auto">
+        <div className="w-[90%] grid lg:grid-cols-3 md:grid-cols-2 gap-8 text-white mx-auto">
 
           {/* project overview div*/}
           <div className={`${open? 'flex': 'hidden'} items-center justify-center w-[100vw] top-0 left-0 fixed h-[100vh] bg-white bg-opacity-10 z-50`}>
-            <div className='relative flex flex-col gap-4 rounded-lg w-[600px] bg-[#1c1c1c] p-8'>
+            <div className='relative flex flex-col gap-4 rounded-lg lg:w-[600px] w-[100%] mx-8 bg-[#1c1c1c] p-8'>
               <i onClick={()=>setOpen(false)} className="ri-close-large-line absolute right-4 top-4 cursor-pointer"></i>
               <h1 className='text-center text-4xl text-blue-700 font-bold'>
                 {projectData[check -1 ].text}

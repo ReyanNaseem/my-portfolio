@@ -7,8 +7,8 @@ const Contact = () => {
         <div className='w-[100%] min-h-[100vh] py-16'>
             <h1 className='text-white text-6xl font-bold text-center mb-12'>GET IN <span className='text-blue-700'>TOUCH</span></h1>
             <div className=' text-white flex items-center justify-center'>
-                <div className='w-[90%] flex gap-4'>
-                    <div className='w-[40%]'>
+                <div className='lg:w-[90%] grid md:grid-cols-2 gap-4'>
+                    <div className=''>
                         <h1 className='text-3xl font-bold'>DON'T BE SHY!</h1>
                         <p className='my-4'>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
         
@@ -30,7 +30,7 @@ const Contact = () => {
                           </div>
                       
                     </div>
-                    <div className='w-[60%] flex flex-col gap-4'>
+                    <div className=' flex flex-col gap-4'>
                       <div className='flex gap-4'>
                         <input type="text" className='w-[100%] p-3 rounded-full bg-gray-700 outline-none' placeholder='Your name' />
                         <input type="text" className='w-[100%] p-3 rounded-full bg-gray-700 outline-none' placeholder='Your email' />
