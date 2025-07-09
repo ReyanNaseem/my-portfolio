@@ -1,4 +1,3 @@
-import React from 'react'
 import Interface from './Interface'
 import Logo from '../../public/my-pic.png'
 import { useNavigate } from 'react-router-dom'

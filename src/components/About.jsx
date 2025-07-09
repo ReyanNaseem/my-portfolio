@@ -9,7 +9,9 @@ import Nodejs from '../../public/nodejs.webp';
 import React from '../../public/react.png';
 import Express from '../../public/express.png';
 import Mongodb from '../../public/mongodb.png';
+import Cv from '../../public/reyan_cv.pdf';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const About = () => {
 
@@ -79,12 +81,12 @@ const About = () => {
                     </tr> */}
               </tbody>
             </table>
-            <button className="flex items-center justify-between gap-2 pl-4 font-bold text-white h-[56px] border-2 border-blue-700 w-fit rounded-full mt-8">
-              Download CV{" "}
+            <a  href={Cv} download={'reyan_cv'} className="flex items-center justify-between gap-2 pl-4 font-bold text-white h-[56px] border-2 border-blue-700 w-fit rounded-full mt-8">
+              Download CV
               <div className="bg-blue-700 flex items-center justify-center font-bold w-[56px] h-[56px] rounded-full">
                 <i class="ri-download-fill"></i>
               </div>
-            </button>
+            </a>
           </div>
 
           <div>
