@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Interface = ({ children }) => {
 
@@ -26,6 +26,7 @@ const Interface = ({ children }) => {
     }
   ]);
   
+  const {pathname} = useLocation()
   const navigate = useNavigate();
 
   return (
@@ -40,7 +41,7 @@ const Interface = ({ children }) => {
                 navigate(item.src);
               }}
             >
-              <p className="group flex items-center justify-end w-[60px] h-[60px]  rounded-full bg-gray-700 hover:bg-blue-700 cursor-pointer transition-all duration-700 hover:w-[180px] relative">
+              <p className={`group flex items-center justify-end w-[60px] h-[60px]  rounded-full ${pathname==item.src? 'bg-blue-700' : 'bg-gray-700'} hover:bg-blue-700 cursor-pointer transition-all duration-700 hover:w-[180px] relative`}>
                 <span className="absolute left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-700 whitespace-nowrap text-2xl">
                   {item.text}
                 </span>
