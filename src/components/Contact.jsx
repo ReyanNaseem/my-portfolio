@@ -39,7 +39,7 @@ const Contact = () => {
                       <textarea rows={6} className='w-[100%] p-3 rounded-[20px] bg-gray-700 outline-none' placeholder='Your message'></textarea>
                       
                       <button className='flex items-center justify-between gap-2 pl-4 font-bold text-white h-[56px] border-2 border-blue-700  float-start w-fit rounded-full'>
-                        More about me 
+                        Sent Message
                         <div className='bg-blue-700 flex items-center justify-center font-bold w-[56px] h-[56px] rounded-full'>
                           <i class="ri-send-plane-fill text-xl"></i>
                         </div>

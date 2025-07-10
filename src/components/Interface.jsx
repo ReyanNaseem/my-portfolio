@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import AnimatePage from "./AnimatePage";
 
 const Interface = ({ children }) => {
 
@@ -57,7 +58,7 @@ const Interface = ({ children }) => {
         })}
       </div>
 
-        <i onClick={()=>setToggel(true)} className="ri-menu-2-line lg:hidden text-3xl font-bold cursor-pointer text-white absolute top-4 right-4"></i>
+        <i onClick={()=>setToggel(true)} className="ri-menu-2-line lg:hidden text-3xl font-bold bg-black px-1 rounded-md cursor-pointer text-white absolute top-4 right-4"></i>
       <div className={`absolute top-0 ${toggel? 'right-0': 'right-[-350px]'} z-50 flex flex-col pt-12 shadow-lg shadow-black bg-[#1c1c1c] w-[350px] h-screen transition-all duration-700`}>
         <i onClick={()=>setToggel(false)} className="ri-close-large-line absolute text-white right-4 top-4 cursor-pointer"></i>
 
@@ -74,7 +75,9 @@ const Interface = ({ children }) => {
         }
 
       </div>
+      <AnimatePage>
       {children}
+      </AnimatePage>
     </div>
   );
 };
