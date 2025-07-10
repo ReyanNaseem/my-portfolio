@@ -63,7 +63,7 @@ const About = () => {
               PERSONAL INFOS:
             </h1>
             <table>
-              <tbody className="text-left text-white text-sm sm:text-md font-thin">
+              <tbody className="text-left text-white text-sm sm:text-lg font-thin">
                 <tr>
                   <th className="w-[280px] p-2">First name: Reyan</th>
                   <th>Address: Gulshan-e-zia Orangi Town Karachi</th>
@@ -73,12 +73,9 @@ const About = () => {
                   <th>Phone: 03453134307</th>
                 </tr>
                 <tr>
-                  {/* <th className='w-[280px] p-2'>Age: 22</th> */}
                   <th className="w-[280px] p-2">Nationality: Pakistani</th>
                   <th>Email: reyannaseem516@gmail.com</th>
                 </tr>
-                {/* <tr>
-                    </tr> */}
               </tbody>
             </table>
             <a  href={Cv} download={'reyan_cv'} className="flex items-center justify-between gap-2 pl-4 font-bold text-white h-[56px] border-2 border-blue-700 w-fit rounded-full mt-8">
