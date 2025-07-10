@@ -25,7 +25,7 @@ const Interface = ({ children }) => {
       icon: "ri-folder-user-line text-3xl mr-[14px]",
     }
   ]);
-  const [toggel, setToggel] = useState('[-350px]')
+  const [toggel, setToggel] = useState(false)
   
   const {pathname} = useLocation()
   const navigate = useNavigate();
@@ -57,9 +57,9 @@ const Interface = ({ children }) => {
         })}
       </div>
 
-        <i onClick={()=>setToggel(0)} className="ri-menu-2-line lg:hidden text-3xl font-bold cursor-pointer text-white absolute top-4 right-4"></i>
-      <div className={`absolute top-0 right-${toggel} z-50 flex flex-col pt-12 shadow-lg shadow-black bg-[#1c1c1c] w-[350px] h-screen transition-all duration-700`}>
-        <i onClick={()=>setToggel('[-350px]')} className="ri-close-large-line absolute text-white right-4 top-4 cursor-pointer"></i>
+        <i onClick={()=>setToggel(true)} className="ri-menu-2-line lg:hidden text-3xl font-bold cursor-pointer text-white absolute top-4 right-4"></i>
+      <div className={`absolute top-0 ${toggel? 'right-0': 'right-[-350px]'} z-50 flex flex-col pt-12 shadow-lg shadow-black bg-[#1c1c1c] w-[350px] h-screen transition-all duration-700`}>
+        <i onClick={()=>setToggel(false)} className="ri-close-large-line absolute text-white right-4 top-4 cursor-pointer"></i>
 
         {
           menu.map((item, index)=>{
