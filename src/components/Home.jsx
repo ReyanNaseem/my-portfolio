@@ -14,11 +14,6 @@ const Home = () => {
             <img className='object-cover z-50 h-[100%]' src={Logo} alt="" />
           </div>
         </div>
-        {/* <div className='wrapper-div h-[80vh] w-[30vw]'>
-          <div className='wrapper-content flex items-center justify-center text-xs'>
-            try again
-          </div>
-        </div> */}
       </div>
       <div className='lg:w-[60%] w-full lg:items-start items-center justify-center flex flex-col gap-4'>
         <div>
