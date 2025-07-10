@@ -10,7 +10,7 @@ const AnimatePage = ({children}) => {
           variants={transition}
           style={{top: `calc(5dvh * ${i})`}}
           transition={{delay: 0.02 * i}}
-          className="fixed left-0 h-[5dvh] z-50 bg-[linear-gradient(to_right,#90d5ff,#1a66ab)]"
+          className="fixed left-0 h-[5dvh] z-50 bg-[linear-gradient(to_right,#0d5785,#126ca3)]"
         />
       ))}
       {children}
