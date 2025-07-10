@@ -31,7 +31,7 @@ const Interface = ({ children }) => {
   const navigate = useNavigate();
 
   return (
-    <div className="flex items-center justify-center relative bg-[#1c1c1c] overflow-x-hidden w-full min-h-[100vh] px-[3vw] lg:px-[6vw] py-[3vw]">
+    <div className="flex items-center justify-center relative bg-[#1c1c1c] overflow-x-hidden w-full min-h-[100vh] px-[3vw] lg:px-[6vw]">
       <div className="fixed hidden lg:flex flex-col items-end gap-4 z-50 top-[50%] -translate-y-[50%] right-[2%] text-white w-[180px]">
         {menu.map((item, index) => {
           return (

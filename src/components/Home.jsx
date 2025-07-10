@@ -7,7 +7,7 @@ const Home = () => {
 
   return (
     <Interface>
-      <div className='flex flex-col lg:flex-row gap-8 items-center justify-between w-[100%] h-[100%]'>
+      <div className='flex flex-col lg:flex-row gap-8 items-center justify-between w-[100%] h-[100%] py-8'>
       <div className='lg:w-[40%]'>
         <div className='lg:h-[80vh] lg:w-[30vw] h-[300px] w-[300px] overflow-hidden bg-black rounded-full lg:rounded-3xl shadow-blue-700'>
           <img className='object-cover h-[100%]' src={Logo} alt="" />

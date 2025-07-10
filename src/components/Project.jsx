@@ -69,7 +69,7 @@ const Project = () => {
     <Interface>
       <div className="w-[100%] min-h-[100vh] py-16">
 
-        <h1 className="text-white text-6xl font-bold text-center mb-12">
+        <h1 className="text-white text-4xl sm:text-6xl font-bold text-center mb-12">
           MY <span className="text-blue-700">PROJECTS</span>
         </h1>
 
@@ -77,28 +77,28 @@ const Project = () => {
 
           {/* project overview div*/}
           <div className={`${open? 'flex': 'hidden'} items-center justify-center w-[100vw] top-0 left-0 fixed h-[100vh] bg-white bg-opacity-10 z-50`}>
-            <div className='relative flex flex-col gap-4 rounded-lg lg:w-[600px] w-[100%] mx-8 bg-[#1c1c1c] p-8'>
+            <div className='relative flex flex-col gap-4 rounded-lg lg:w-[600px] w-[100%] mx-8 bg-[#1c1c1c] p-4 sm:p-8'>
               <i onClick={()=>setOpen(false)} className="ri-close-large-line absolute right-4 top-4 cursor-pointer"></i>
-              <h1 className='text-center text-4xl text-blue-700 font-bold'>
+              <h1 className='text-center text-2xl sm:text-4xl text-blue-700 font-bold'>
                 {projectData[check -1 ].text}
               </h1>
               
-              <div className='grid grid-cols-2'>
-                <div className='flex gap-4'>
+              <div className='grid grid-cols-2 '>
+                <div className='flex gap-4 text-sm sm:text-md'>
                   <i className="ri-file-list-2-line"></i>
                   <p>Project: {projectData[check -1 ].text}</p>
                 </div>
-                <div className='flex gap-4'>
+                <div className='flex gap-4 text-sm sm:text-md'>
                   <i className="ri-contacts-line"></i>
                   <p>Client: Practice</p>
                 </div>
               </div>
               <div className='grid grid-cols-2'>
-                <div className='flex gap-4'>
+                <div className='flex gap-4 text-sm sm:text-lg'>
                   <i className="ri-drag-move-fill"></i>
                   <p>Technologies: {projectData[check -1 ].tech}</p>
                 </div>
-                <div className='flex gap-4'>
+                <div className='flex gap-4 text-sm sm:text-lg'>
                   <i className="ri-live-line"></i>
                   <p>Live At: <Link to={projectData[check -1 ].link} className='text-blue-700 cursor-pointer'>Click here</Link></p>
                 </div>
