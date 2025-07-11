@@ -76,7 +76,7 @@ const Project = () => {
         <div className="w-[90%] grid lg:grid-cols-3 md:grid-cols-2 gap-8 text-white mx-auto">
 
           {/* project overview div*/}
-          <div className={`${open? 'flex': 'hidden'} items-center justify-center w-[100vw] top-0 left-0 fixed h-[100vh] bg-white bg-opacity-10 z-50`}>
+          <div className={`${open? 'flex': 'hidden'} items-center justify-center w-[100vw] top-0 left-0 fixed h-[100vh] bg-white bg-opacity-20 z-50`}>
             <div className='relative flex flex-col gap-4 rounded-lg lg:w-[600px] w-[100%] mx-8 bg-[#1c1c1c] p-4 sm:p-8'>
               <i onClick={()=>setOpen(false)} className="ri-close-large-line absolute right-4 top-4 cursor-pointer"></i>
               <h1 className='text-center text-2xl sm:text-4xl text-blue-700 font-bold'>
@@ -84,11 +84,11 @@ const Project = () => {
               </h1>
               
               <div className='grid grid-cols-2 '>
-                <div className='flex gap-4 text-sm sm:text-md'>
+                <div className='flex gap-4 text-sm sm:text-lg'>
                   <i className="ri-file-list-2-line"></i>
                   <p>Project: {projectData[check -1 ].text}</p>
                 </div>
-                <div className='flex gap-4 text-sm sm:text-md'>
+                <div className='flex gap-4 text-sm sm:text-lg'>
                   <i className="ri-contacts-line"></i>
                   <p>Client: Practice</p>
                 </div>

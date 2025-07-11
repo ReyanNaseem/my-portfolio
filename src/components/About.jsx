@@ -78,7 +78,7 @@ const About = () => {
                 </tr>
               </tbody>
             </table>
-            <a  href={Cv} download={'reyan_cv'} className="flex items-center justify-between gap-2 pl-4 font-bold text-white h-[56px] border-2 border-blue-700 w-fit rounded-full mt-8">
+            <a  href={Cv} download={'reyan_cv'} className="flex items-center justify-between gap-2 pl-4 font-bold text-white transition-all duration-1000 hover:bg-blue-700 h-[56px] border-2 border-blue-700 w-fit rounded-full mt-8">
               Download CV
               <div className="bg-blue-700 flex items-center justify-center font-bold w-[56px] h-[56px] rounded-full">
                 <i className="ri-download-fill"></i>
