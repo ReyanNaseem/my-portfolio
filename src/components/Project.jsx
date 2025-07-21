@@ -7,6 +7,7 @@ import Project4 from '../../public/project4.PNG';
 import Project5 from '../../public/project5.PNG';
 import Project6 from '../../public/project6.PNG';
 import Project7 from '../../public/project7.PNG';
+import Project8 from '../../public/project8.PNG';
 import { Link } from 'react-router-dom';
 
 const Project = () => {
@@ -16,13 +17,20 @@ const Project = () => {
   const [projectData, setProjectData] = useState([
     {
       id: 1,
+      src: Project8,
+      text: 'Loan Craft Full stack app',
+      tech: 'Mongodb, Express, React, Node',
+      link: 'https://loancraft-app.vercel.app/'
+    },
+    {
+      id: 2,
       src: Project1,
       text: 'Duo Studio Web Clone',
       tech: 'Html, Css, Javascript, Gsap',
       link: 'https://reyannaseem.github.io/Duo-studio/'
     },
     {
-      id: 2,
+      id: 3,
       src: Project2,
       text: 'Tic Tac Toe',
       tech: 'Html, Css, Javascript',
