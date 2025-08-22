@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
 import Interface from './Interface'
-import Project1 from '../../public/project1.PNG';
-import Project2 from '../../public/project2.PNG';
-import Project3 from '../../public/project3.PNG';
-import Project4 from '../../public/project4.PNG';
-import Project5 from '../../public/project5.PNG';
-import Project6 from '../../public/project6.PNG';
-import Project7 from '../../public/project7.PNG';
-import Project8 from '../../public/project8.PNG';
-import Project9 from '../../public/project9.PNG';
+import Project1 from '/project1.PNG';
+import Project2 from '/project2.PNG';
+import Project3 from '/project3.PNG';
+import Project4 from '/project4.PNG';
+import Project5 from '/project5.PNG';
+import Project6 from '/project6.PNG';
+import Project7 from '/project7.PNG';
+import Project8 from '/project8.PNG';
+import Project9 from '/project9.png';
 import { Link } from 'react-router-dom';
 
 const Project = () => {
