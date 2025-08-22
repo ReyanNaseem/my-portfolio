@@ -8,6 +8,7 @@ import Project5 from '../../public/project5.PNG';
 import Project6 from '../../public/project6.PNG';
 import Project7 from '../../public/project7.PNG';
 import Project8 from '../../public/project8.PNG';
+import Project9 from '../../public/project9.PNG';
 import { Link } from 'react-router-dom';
 
 const Project = () => {
@@ -17,55 +18,62 @@ const Project = () => {
   const [projectData, setProjectData] = useState([
     {
       id: 1,
+      src: Project9,
+      text: 'Employee Management System',
+      tech: 'Mongodb, Express, React, Node',
+      link: 'https://e-m-s-system.vercel.app/login'
+    },
+    {
+      id: 2,
       src: Project8,
       text: 'Loan Craft Full stack app',
       tech: 'Mongodb, Express, React, Node',
       link: 'https://loancraft-app.vercel.app/'
     },
     {
-      id: 2,
+      id: 3,
       src: Project1,
       text: 'Duo Studio Web Clone',
       tech: 'Html, Css, Javascript, Gsap',
       link: 'https://reyannaseem.github.io/Duo-studio/'
     },
     {
-      id: 3,
+      id: 4,
       src: Project2,
       text: 'Tic Tac Toe',
       tech: 'Html, Css, Javascript',
       link: 'https://reyannaseem.github.io/tic-tac-toe/'
     },
     {
-      id: 3,
+      id: 5,
       src: Project3,
       text: 'Toyota Indus Web Clone',
       tech: 'Html, Css, Javascript',
       link: 'https://reyannaseem.github.io/toyota-indus/'
     },
     {
-      id: 4,
+      id: 6,
       src: Project4,
       text: 'Nurpur Web Clone',
       tech: 'Html, Css, Javascript',
       link: 'https://reyannaseem.github.io/nurpur-clone/'
     },
     {
-      id: 5,
+      id: 7,
       src: Project5,
       text: 'Envanto Web Clone',
       tech: 'Html, Css, Javascript',
       link: 'https://reyannaseem.github.io/envato-clone/'
     },
     {
-      id: 6,
+      id: 8,
       src: Project6,
       text: 'Coffee Web Clone',
       tech: 'Html, Css, Javascript',
       link: 'https://reyannaseem.github.io/boostrap/'
     },
     {
-      id: 7,
+      id: 9,
       src: Project7,
       text: 'TODO App',
       tech: 'Html, Css, Js',
